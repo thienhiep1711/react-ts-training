@@ -1,6 +1,3 @@
-import Button from "./components/button/button"
-import TextInput from "./components/text-input/text-input"
-import { useState } from 'react'
 import TodoList from "./modules/todo-list/todo-list";
 
 function App() {
