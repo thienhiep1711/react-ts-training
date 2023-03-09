@@ -1,15 +1,11 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react'
 
 interface ToogleInputProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const ToogleInput: FC<ToogleInputProps> = ({ children }) => {
-  return (
-    <div>
-      {children || 'ToogleInputProps'}
-    </div>
-  );
-};
+  return <div>{children || 'ToogleInputProps'}</div>
+}
 
-export default ToogleInput;
+export default ToogleInput

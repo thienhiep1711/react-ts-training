@@ -1,5 +1,3 @@
 @layer base {
-  .is-loading-page {
-    @apply relative;
-  }
+
 }

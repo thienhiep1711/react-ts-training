@@ -1,7 +1,8 @@
 module.exports = {
-  tailwindConfig: './tailwind.config.js',
+  tailwindConfig: './tailwind.config.cjs',
   singleQuote: true,
   trailingComma: 'none',
+  parser: "typescript",
   printWidth: 160,
   proseWrap: 'never',
   tabWidth: 2,

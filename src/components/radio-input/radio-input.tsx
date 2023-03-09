@@ -1,15 +1,11 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react'
 
 interface RadioInputProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const RadioInput: FC<RadioInputProps> = ({ children }) => {
-  return (
-    <div>
-      {children || 'RadioInputProps'}
-    </div>
-  );
-};
+  return <div>{children || 'RadioInputProps'}</div>
+}
 
-export default RadioInput;
+export default RadioInput

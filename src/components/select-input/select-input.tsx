@@ -1,15 +1,11 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react'
 
 interface SelectInputProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const SelectInput: FC<SelectInputProps> = ({ children }) => {
-  return (
-    <div>
-      {children || 'SelectInputProps'}
-    </div>
-  );
-};
+  return <div>{children || 'SelectInputProps'}</div>
+}
 
-export default SelectInput;
+export default SelectInput

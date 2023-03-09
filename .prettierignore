@@ -28,3 +28,8 @@ src/components/libs/*.js
 *.ttf
 *.sh
 *.txt
+
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}

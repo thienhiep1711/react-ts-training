@@ -1,15 +1,11 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react'
 
 interface CheckboxInputProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const CheckboxInput: FC<CheckboxInputProps> = ({ children }) => {
-  return (
-    <div>
-      {children || 'CheckboxInput'}
-    </div>
-  );
-};
+  return <div>{children || 'CheckboxInput'}</div>
+}
 
-export default CheckboxInput;
+export default CheckboxInput

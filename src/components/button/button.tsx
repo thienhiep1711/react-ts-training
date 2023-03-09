@@ -1,8 +1,8 @@
-import { FC, ReactNode, ButtonHTMLAttributes } from 'react';
+import { FC, ReactNode, ButtonHTMLAttributes } from 'react'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
-  onClick: () => void;
+  children: ReactNode
+  onClick: () => void
 }
 
 const Button: FC<ButtonProps> = ({ children, onClick, ...rest }) => {
@@ -10,7 +10,7 @@ const Button: FC<ButtonProps> = ({ children, onClick, ...rest }) => {
     <button onClick={onClick} {...rest}>
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

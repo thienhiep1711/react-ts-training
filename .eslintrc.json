@@ -1,6 +1,15 @@
 {
-  "parser": "@babel/eslint-parser",
-  "extends": ["prettier", "standard"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "prettier",
+    "standard",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
+    "plugin:@typescript-eslint/eslint-recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "ignorePatterns": ["**/*.css","**/*.scss"],
   "rules": {
     "quotes": [2, "single", { "avoidEscape": true }],
     "space-before-function-paren": "off",
@@ -10,7 +19,13 @@
   },
   "settings": {
     "react": {
-      "pragma": "h"
+      "version": "detect",
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"],
+          "paths": ["./src"]
+        }
+      }
     }
   }
 }
