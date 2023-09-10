@@ -3,12 +3,20 @@ import PageHeader from './PageHeader'
 import PageMain from './PageMain'
 import PageFooter from './PageFooter'
 
-type Props = {
-  children: ReactNode
-  setting: object
+type Setting = {
+  title: string
+  techs: Array<string>
+  startDate: string
+  endDate: string
+  author: string
 }
 
-function PageLayout({ children, setting }: Props) {
+type PageLayoutProps = {
+  children: ReactNode
+  setting: Setting
+}
+
+function PageLayout({ children, setting }: PageLayoutProps) {
   return (
     <>
       <PageHeader title={setting.title} techs={setting.techs}></PageHeader>
