@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom"
 import './styles/index.css'
@@ -10,23 +10,18 @@ import Pokemon from './modules/pokemon/Pokemon'
 import Dashboard from './modules/dashboard/Dashboard'
 import { navSettings } from './routers/nav-settings'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: navSettings.basePath,
-    children: [
-      {
-        path: "",
-        element: <Dashboard />,
-      },
-      {
-        path: navSettings.navItems[1].path,
-        element: <TodoList />,
-      },
-      {
-        path: navSettings.navItems[2].path,
-        element: <Pokemon />,
-      }
-    ]
+    path: "/",
+    element: <Dashboard />,
+  },
+  {
+    path: navSettings.navItems[1].path,
+    element: <TodoList />,
+  },
+  {
+    path: navSettings.navItems[2].path,
+    element: <Pokemon />,
   }
 ]);
 

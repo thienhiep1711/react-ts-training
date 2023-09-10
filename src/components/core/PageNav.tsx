@@ -1,12 +1,13 @@
 import React from 'react'
 import { navSettings } from '../../routers/nav-settings'
+import { Link } from 'react-router-dom'
 function PageNav() {
   return (
     <nav>
       <ul className='flex'>
         {navSettings.navItems.map((item, index) => (
           <li className='mx-2' key={index}>
-            <a href={item.fullPath}>{item.name}</a>
+            <Link to={item.fullPath}>{item.name}</Link>
           </li>
         ))}
       </ul>

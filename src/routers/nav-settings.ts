@@ -1,4 +1,4 @@
-const BASE_PATH = '/react-ts-training'
+const BASE_PATH = '/'
 
 const navSettings = {
   basePath: BASE_PATH,
@@ -10,13 +10,13 @@ const navSettings = {
     },
     {
       path: "todo-list",
-      fullPath: BASE_PATH + "/todo-list",
+      fullPath: "/todo-list",
       name: "Todo List",
     },
     {
       path: "pokemon",
       name: "Pokemon",
-      fullPath: BASE_PATH + "/pokemon",
+      fullPath: "/pokemon",
     }
   ]
 }
