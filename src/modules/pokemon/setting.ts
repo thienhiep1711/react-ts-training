@@ -3,7 +3,7 @@ const setting = {
   title: 'Pokemon',
   path: '/pokemon',
   author: 'Hiep Nguyen',
-  techs: ['react', 'typescript', 'redux'],
+  techs: ['react', 'typescript', 'redux-toolkit'],
   startDate: '10/09/2023',
   endDate: 'Not completed'
 }

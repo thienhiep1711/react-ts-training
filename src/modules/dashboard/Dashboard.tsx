@@ -2,11 +2,11 @@ import { FC, ReactNode, useState } from 'react'
 import PageLayout from '../../components/core/PageLayout'
 import setting from './setting'
 
-interface TodoListProps {
+interface DashboardProps {
   children?: ReactNode
 }
 
-const TodoList: FC<TodoListProps> = () => {
+const Dashboard: FC<DashboardProps> = () => {
   const [inputValue, setInputValue] = useState('')
 
   const handleOnChange = (value: string) => {
@@ -17,7 +17,7 @@ const TodoList: FC<TodoListProps> = () => {
       <div className="flex justify-center">
         <div className="flex-col">
           <div className="flex w-full max-w-[600px]">
-            <h1 className="h4 mb-3 text-primary">Please enter a todo</h1>
+            <h1 className="h4 mb-3 text-primary">Dashboard</h1>
           </div>
         </div>
       </div>
@@ -25,4 +25,4 @@ const TodoList: FC<TodoListProps> = () => {
   )
 }
 
-export default TodoList
+export default Dashboard
