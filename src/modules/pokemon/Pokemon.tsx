@@ -2,11 +2,7 @@ import { FC, ReactNode, useState } from 'react'
 import PageLayout from '../../components/core/PageLayout'
 import setting from './setting'
 
-interface PokemonProps {
-  children: ReactNode
-}
-
-const TodoList: FC<PokemonProps> = ({ children }) => {
+const Pokemon = () => {
   const [inputValue, setInputValue] = useState('')
 
   const handleOnChange = (value: string) => {
@@ -25,4 +21,4 @@ const TodoList: FC<PokemonProps> = ({ children }) => {
   )
 }
 
-export default TodoList
+export default Pokemon

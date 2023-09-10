@@ -3,7 +3,7 @@ import PageNav from './PageNav'
 
 type Props = {
   title: String
-  techs: Array[String]
+  techs: Array<string>
 }
 
 function PageHeader({ title, techs }: Props) {
