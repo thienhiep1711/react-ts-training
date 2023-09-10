@@ -3,7 +3,7 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'none',
   parser: "typescript",
-  printWidth: 160,
+  printWidth: 140,
   proseWrap: 'never',
   tabWidth: 2,
   useTabs: false,
