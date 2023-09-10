@@ -15,20 +15,10 @@
       hover:border-secondary-hover   hover:bg-secondary-hover;
   }
 
-  .button-outlined-hero {
-    @apply button border-white bg-white text-grey-900
-      hover:border-success-content hover:bg-success-bg hover:text-white
-      disabled:border-default disabled:bg-transparent disabled:text-grey-500;
-  }
-
   .button-outlined {
     @apply button border-default bg-transparent text-grey-900
       hover:border-default hover:bg-grey-100 hover:text-grey-900
       disabled:border-default disabled:bg-transparent disabled:text-grey-500;
-  }
-
-  .button-outlined-white {
-    @apply button-outlined border-white text-white hover:border-white hover:bg-white hover:text-grey-900;
   }
 
   .button-small {
@@ -38,15 +28,7 @@
   .button-large {
     @apply min-h-[54px] pt-4 pb-3.5;
   }
-
-  .button-large-2 {
-    @apply min-h-[72px] pt-4 pb-3.5;
-  }
-
-  .button-white {
-    @apply button button-outlined border-white bg-white;
-  }
-
+  
   .button-icon {
     @apply max-h-[48px];
   }

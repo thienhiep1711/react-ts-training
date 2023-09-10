@@ -6,12 +6,7 @@
 @import './lib/utilities.css';
 @import './lib/variables.css';
 
-@import '../components/button/button.css';
-@import '../components/checkbox-input/checkbox-input.css';
-@import '../components/radio-input/radio-input.css';
-@import '../components/select-input/select-input.css';
-@import '../components/text-input/text-input.css';
-@import '../components/toogle-input/toogle-input.css';
+@import './modules/button.css';
 
 @tailwind base;
 @tailwind components;

@@ -1,4 +1,4 @@
-import TodoList from "./modules/todo-list/todo-list";
+import TodoList from "./modules/todo-list/TodoList";
 
 function App() {
   return (
