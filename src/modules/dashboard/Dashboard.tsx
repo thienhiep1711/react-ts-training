@@ -1,6 +1,7 @@
 import { FC, ReactNode, useState } from 'react'
 import PageLayout from '../../components/core/PageLayout'
 import setting from './setting'
+import PageNav from '../../components/core/PageNav'
 
 interface DashboardProps {
   children?: ReactNode
@@ -17,7 +18,7 @@ const Dashboard: FC<DashboardProps> = () => {
       <div className="flex justify-center">
         <div className="flex-col">
           <div className="flex w-full max-w-[600px]">
-            <h1 className="h4 mb-3 text-primary">Dashboard</h1>
+            <PageNav />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import PageNav from './PageNav'
+import { Link } from 'react-router-dom'
 
 type Props = {
   title: String
@@ -15,7 +15,9 @@ function PageHeader({ title, techs }: Props) {
         </span>
         <h1 className="text-xl font-bold">{title}</h1>
       </div>
-      <PageNav />
+      <div className='mr-4'>
+        <Link to="/" className="text-white">Go to dashboard</Link>
+      </div>
       <div className="mt-4 flex justify-center md:mt-0">
         {techs.map((tech, index) => {
           return (

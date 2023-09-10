@@ -16,11 +16,11 @@ const router = createHashRouter([
     element: <Dashboard />,
   },
   {
-    path: navSettings.navItems[1].path,
+    path: navSettings.navItems[0].path,
     element: <TodoList />,
   },
   {
-    path: navSettings.navItems[2].path,
+    path: navSettings.navItems[1].path,
     element: <Pokemon />,
   }
 ]);
