@@ -5,7 +5,7 @@ type Props = {
 }
 
 function PageMain({ children }: Props) {
-  return <div className="container min-h-[calc(100vh-136px)] py-8">{children}</div>
+  return <div className='container min-h-[calc(100vh-136px)] py-8'>{children}</div>
 }
 
 export default PageMain

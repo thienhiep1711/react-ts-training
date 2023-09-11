@@ -15,9 +15,9 @@ const Dashboard: FC<DashboardProps> = () => {
   }
   return (
     <PageLayout setting={setting}>
-      <div className="flex justify-center">
-        <div className="flex-col">
-          <div className="flex w-full max-w-[600px]">
+      <div className='flex justify-center'>
+        <div className='flex-col'>
+          <div className='flex w-full max-w-[600px]'>
             <PageNav />
           </div>
         </div>

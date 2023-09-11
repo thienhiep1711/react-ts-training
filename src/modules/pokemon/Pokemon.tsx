@@ -10,10 +10,10 @@ const Pokemon = () => {
   }
   return (
     <PageLayout setting={setting}>
-      <div className="flex justify-center">
-        <div className="flex-col">
-          <div className="flex w-full max-w-[600px]">
-            <h1 className="h4 mb-3 text-primary">Pokemon</h1>
+      <div className='flex justify-center'>
+        <div className='flex-col'>
+          <div className='flex w-full max-w-[600px]'>
+            <h1 className='h4 mb-3 text-primary'>Pokemon</h1>
           </div>
         </div>
       </div>

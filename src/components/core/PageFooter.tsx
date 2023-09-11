@@ -7,12 +7,14 @@ type Props = {
 }
 
 function PageFooter({ author, completedDate, startDate }: Props) {
-  return <div className="bg-primary text-white px-6 py-4 flex justify-between items-center">
-    <strong>{author}</strong>
-    <div>
-      {startDate} - {completedDate}
+  return (
+    <div className='flex items-center justify-between bg-primary px-6 py-4 text-white'>
+      <strong>{author}</strong>
+      <div>
+        {startDate} - {completedDate}
+      </div>
     </div>
-  </div>
+  )
 }
 
 export default PageFooter
